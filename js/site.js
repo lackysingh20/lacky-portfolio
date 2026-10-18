@@ -76,3 +76,7 @@ document.documentElement.classList.add("js");(function(){
   var tlx=document.querySelector('.tline');if(tlx&&window.gsap&&!reduce){gsap.fromTo(tlx,{'--tl':0},{'--tl':1,ease:'none',scrollTrigger:{trigger:tlx,start:'top 80%',end:'bottom 60%',scrub:true}})}
   addEventListener('load',function(){ScrollTrigger.refresh()});
 })();
+
+(function(){var d=document;d.querySelectorAll('.cvdd').forEach(function(dd){var b=dd.querySelector('.cvbtn');b.addEventListener('click',function(e){e.stopPropagation();var o=!dd.classList.contains('open');d.querySelectorAll('.cvdd.open').forEach(function(x){x.classList.remove('open');x.querySelector('.cvbtn').setAttribute('aria-expanded','false')});dd.classList.toggle('open',o);b.setAttribute('aria-expanded',o)})});
+d.addEventListener('click',function(){d.querySelectorAll('.cvdd.open').forEach(function(x){x.classList.remove('open');x.querySelector('.cvbtn').setAttribute('aria-expanded','false')})});d.addEventListener('keydown',function(e){if(e.key==='Escape')d.querySelectorAll('.cvdd.open').forEach(function(x){x.classList.remove('open')})});
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!reduce&&window.gsap&&window.ScrollTrigger){d.querySelectorAll('.steps.flow').forEach(function(f){gsap.fromTo(f,{'--fp':0},{'--fp':1,ease:'none',scrollTrigger:{trigger:f,start:'top 85%',end:'bottom 55%',scrub:true}})})}})();
