@@ -73,5 +73,6 @@ document.documentElement.classList.add("js");(function(){
     gsap.fromTo(sec,{'--sh':0},{'--sh':1,ease:'none',scrollTrigger:{trigger:sec,start:'top bottom',end:'top 40%',scrub:true}})});
   var bq=d.querySelector('.banner');if(bq&&innerWidth>760){bq.classList.add('pin-quote');gsap.fromTo('.banner p',{scale:.86,opacity:.3},{scale:1,opacity:1,ease:'none',scrollTrigger:{trigger:bq,start:'top 85%',end:'center center',scrub:true}})}
   gsap.utils.toArray('.mq-t').forEach(function(t,i){gsap.to(t.parentNode,{x:i?60:-60,ease:'none',scrollTrigger:{trigger:'#skills',start:'top bottom',end:'bottom top',scrub:true}})});
+  var tlx=document.querySelector('.tline');if(tlx&&window.gsap&&!reduce){gsap.fromTo(tlx,{'--tl':0},{'--tl':1,ease:'none',scrollTrigger:{trigger:tlx,start:'top 80%',end:'bottom 60%',scrub:true}})}
   addEventListener('load',function(){ScrollTrigger.refresh()});
 })();
