@@ -17,7 +17,7 @@
   <a class="brand" href="#home">lacky<span>.</span>singh</a>
   <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <nav class="links">
-    <a href="#about">About</a><a href="#product">Product</a><a href="#expertise">Expertise</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a class="cta" href="#contact">Say hi</a>
+    <a href="#about">About</a><a href="#product">Product</a><a href="#engineering">Engineering</a><a href="#expertise">Expertise</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a class="cta" href="#contact">Say hi</a>
   </nav>
 </header>
 
@@ -81,6 +81,22 @@
     <article class="case reveal"><p class="ctag">Compliance stakeholders</p><h3>Market Sentinel</h3><p>Worked with compliance stakeholders to translate SEBI-aligned reporting obligations into detection rules for surveillance and rumour detection across BSE/NSE top-250 companies.</p></article>
     <article class="case reveal"><p class="ctag">Team leadership</p><h3>Ambadnya OTT launch</h3><p>Directed 4-6 developers to take a client's streaming product to market on web and Google Play.</p></article>
     <article class="case reveal"><p class="ctag">KPIs and release gates</p><h3>Measured outcomes</h3><p>Releases on Tender AI are gated on a 100+ tender golden set with human approval gates. Outcomes tracked: 80% fewer data requests, 70% faster report turnaround, negotiation prep from 15 days to 1.</p></article>
+  </div>
+</section>
+<section id="engineering" class="sec">
+  <p class="eyebrow">Engineering</p><h2>How I work as an AI Engineer</h2>
+  <p class="note">I build GenAI systems that hold up in production. Here is the loop, with where it actually happened.</p>
+  <ol class="steps">
+    <li class="step reveal"><span class="sn">01</span><h3>Prototype</h3><p>Start small: retrieval experiments and LLM tooling on real documents and data before committing to an architecture.</p></li>
+    <li class="step reveal"><span class="sn">02</span><h3>Evaluate</h3><p>Build golden sets and LLM-as-a-Judge checks for SQL correctness, retrieval relevance and hallucination.</p></li>
+    <li class="step reveal"><span class="sn">03</span><h3>Harden</h3><p>Add a model gateway with tiered routing and failover, tenant isolation, audit logs and human approval gates.</p></li>
+    <li class="step reveal"><span class="sn">04</span><h3>Ship and Monitor</h3><p>Containerise with Docker, release through CI/CD on AWS and Azure, and gate every release on evals.</p></li>
+  </ol>
+  <div class="cases">
+    <article class="case reveal"><p class="ctag">Multi-agent orchestration</p><h3>Tender AI</h3><p>A 10-agent platform across a nine-stage bid lifecycle with orchestrator-enforced human approval gates, a LiteLLM gateway with failover and a self-hosted no-egress lane, and releases gated on a 100+ tender golden set.</p></article>
+    <article class="case reveal"><p class="ctag">RAG plus dynamic SQL</p><h3>Cortex360</h3><p>LangGraph multi-agent routing between RAG and SQL with LLM-as-a-Judge checks; live at EGA and Al Jazeera Steel, cutting report turnaround by 70%.</p></article>
+    <article class="case reveal"><p class="ctag">Data engineering</p><h3>Nuvama Wealth data lake</h3><p>Bronze/Silver/Gold Apache Iceberg lake over 5 years of NSE/BSE F&amp;O tick data with Greeks and IV ETL; backtests 90% faster.</p></article>
+    <article class="case reveal"><p class="ctag">Analytics agents</p><h3>Analytics copilot</h3><p>A code-executing agent (Claude, MCP, PostgreSQL) that discovers schema, runs SQL step by step and returns charts with a reasoning trace. Data requests fell 80%.</p></article>
   </div>
 </section>
 
